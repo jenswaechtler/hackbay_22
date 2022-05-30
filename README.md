@@ -18,6 +18,6 @@ ros2 run garbage_detection gargarbage_detection_node
 ## Only for Demo/Test
 ### 
 
-′′′bash
+```bash
 ros2 run image_tools cam2image --ros-args -p burger_mode:=True
-′′′
+```
