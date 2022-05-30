@@ -1,6 +1,7 @@
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
+from sensor_msgs.msg import Image
 
 
 class GarbageDetection(Node):
@@ -10,7 +11,7 @@ class GarbageDetection(Node):
         
         # TODO: change to msg_image and change topic
         self.subscription = self.create_subscription(
-            String,
+            Image,
             'image',
             self.imageCallback,
             10)
@@ -18,7 +19,8 @@ class GarbageDetection(Node):
         self.subscription  # prevent unused variable warning
 
     def imageCallback(self, msg):
-        self.get_logger().info('I heard: "%s"' % msg.data)
+        # self.get_logger().info('I heard: "%s"' % msg.data)
+         self.get_logger().info('Image received ')
         
         # Do all the magic here
         #
