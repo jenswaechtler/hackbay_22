@@ -28,7 +28,7 @@ class GarbageDetection(Node):
         # 2. Garbage detection (open CV stuff -> bounding box)
         # 3. Publish video as youtube stream
         #
-
+    
 
 def main(args=None):
     rclpy.init(args=args)
