@@ -34,6 +34,7 @@ class GarbageDetection(Node):
             cv_image = cv2.transpose(cv_image)
             cv_image = cv2.flip(cv_image, 1)
             self.show_image(cv_image)
+            
         
         except CvBridgeError as e:
             rclpy.logerr("CvBridge Error: {0}".format(e))
